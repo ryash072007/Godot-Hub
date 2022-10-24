@@ -5,6 +5,7 @@ var download_repo: String = "https://downloads.tuxfamily.org/godotengine/"
 var second_level_urls := {}
 
 
+var versions := []
 
 func _ready():
 	get_versions()
@@ -23,6 +24,7 @@ func update_downloaded_versions():
 			continue
 		
 		$ItemList.add_item(file_name)
+		versions.append(file_name)
 		file_name = installed_checker.get_next()
 
 
