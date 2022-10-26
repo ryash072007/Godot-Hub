@@ -50,6 +50,7 @@ position = Vector2( 25, 25 )
 texture = ExtResource( 5 )
 
 [node name="Home" type="Node2D" parent="."]
+visible = false
 script = ExtResource( 8 )
 
 [node name="Godot Hub" type="RichTextLabel" parent="Home"]
@@ -101,7 +102,6 @@ wait_time = 60.0
 autostart = true
 
 [node name="Installs" type="Node2D" parent="."]
-visible = false
 script = ExtResource( 7 )
 
 [node name="Installs" type="RichTextLabel" parent="Installs"]
@@ -258,8 +258,10 @@ scale = Vector2( 0.5, 0.5 )
 z_index = 1
 
 [node name="ColorPicker" type="ColorPicker" parent="Settings/CP"]
-margin_right = 438.0
-margin_bottom = 596.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 442.0
+margin_bottom = 600.0
 edit_alpha = false
 presets_visible = false
 
